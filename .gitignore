@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Indexes, databases and user data (never commit: they describe files on your own computer)
+.filerec_data/
+my_index/
+system_index/
+system_index_backup/
+*.db
+*.db-wal
+*.db-shm
+ui_prefs.json
+skip_folders.txt
+
+# Generated demo files (recreate with: python scripts\make_demo_corpus.py demo_workspace)
+demo_workspace/
+
+# Models
+models/
+
+# Backups and one-off update scripts
+*.bak
+*.bak9
+apply_update*.py
+
+# Editors / OS
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store

@@ -1,0 +1,38 @@
+# Install PyTorch CPU first (setup.bat does this):
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+
+# Models
+sentence-transformers>=3.0
+transformers>=4.51
+
+# Agents and retrieval
+langgraph>=0.2
+tantivy>=0.22
+qdrant-client>=1.12
+rapidfuzz>=3.0
+networkx>=3.0
+numpy
+requests
+
+# Ingestion
+pypdf>=4.0
+python-docx>=1.1
+python-pptx>=1.0
+openpyxl>=3.1
+watchdog>=4.0
+pillow
+
+# Windows shortcut reading for 'Import Windows recent files' (optional; a built-in reader is used otherwise)
+pywin32; sys_platform == "win32"
+
+# UI
+streamlit>=1.50
+pandas
+matplotlib
+
+# Demo data
+fpdf2>=2.7
+
+# Optional extras (uncomment to use)
+# docling>=2.0          # layout-aware parsing: set FILEREC_PARSER=docling
+# pytesseract pdf2image # OCR for images and scanned PDFs: set FILEREC_USE_OCR=1, install Tesseract
